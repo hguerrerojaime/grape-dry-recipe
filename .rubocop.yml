@@ -1,0 +1,16 @@
+# This is the configuration used to check the rubocop source code.
+AllCops:
+  TargetRubyVersion: 2.6
+  NewCops: enable
+Documentation:
+  Enabled: false
+Layout:
+  Metrics/LineLength:
+    Max: 110
+Metrics/MethodLength:
+  Max: 25
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*_test.rb'
+Metrics/AbcSize:
+  Max: 30

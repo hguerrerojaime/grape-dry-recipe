@@ -1,0 +1,17 @@
+# logs
+*.log
+*.out
+
+# Configuration files
+config/*.yaml
+!config/*.default.yaml
+
+application.log
+
+.byebug_history
+
+.idea/*
+.vscode
+*.patch
+coverage/
+test-report/

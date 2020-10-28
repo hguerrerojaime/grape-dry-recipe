@@ -1,0 +1,7 @@
+database:
+  dsn: <%= ENV.fetch('DATABASE_URL', 'sqlite:memory') %>
+logger:
+  output: <%= ENV.fetch('LOGGER__OUTPUT', 'application.log') %>
+  level: <%= ENV.fetch('LOGGER__LEVEL', 'INFO') %>
+cors:
+  allowed_origins: <%= ENV.fetch('CORS__ALLOWED_ORIGINS', "''" ) %>
